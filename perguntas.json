@@ -1,0 +1,144 @@
+{
+ "perguntas": [
+  {
+    "pergunta": "O que é poluição marítima?",
+    "alternativas": ["Recifes de coral", "Peixes nadando", "Lixo e sujeira no mar", "Água limpa e salgada"],
+    "resposta": "Lixo e sujeira no mar"
+  },
+  {
+    "pergunta": "O que é microplástico?",
+    "alternativas": ["Poeira do solo", "Grãos de areia", "Plástico bem pequeno", "Insetos marinhos"],
+    "resposta": "Plástico bem pequeno"
+  },
+  {
+    "pergunta": "Impacto do óleo no mar?",
+    "alternativas": ["Melhora o brilho da água", "Mata animais", "Ajuda na navegação", "Alimenta peixes"],
+    "resposta": "Mata animais"
+  },
+  {
+    "pergunta": "Solução pro lixo?",
+    "alternativas": ["Jogar no mar", "Reduzir e reciclar", "Esconder em praias", "Deixar nos rios"],
+    "resposta": "Reduzir e reciclar"
+  },
+  {
+    "pergunta": "O que mais polui os oceanos?",
+    "alternativas": ["Navios petroleiros", "Areia", "Plástico descartado", "Peixes mortos"],
+    "resposta": "Plástico descartado"
+  },
+  {
+    "pergunta": "Qual tipo de plástico é mais comum no mar?",
+    "alternativas": ["Brinquedos", "Tubos de PVC", "Sacolas e garrafas", "Cadeiras de praia"],
+    "resposta": "Sacolas e garrafas"
+  },
+  {
+    "pergunta": "Como o esgoto chega ao mar?",
+    "alternativas": ["Por chuvas naturais", "Por evaporar", "Por tubulações sem tratamento", "Por animais marinhos"],
+    "resposta": "Por tubulações sem tratamento"
+  },
+  {
+    "pergunta": "O que os peixes podem ingerir?",
+    "alternativas": ["Plâncton artificial", "Microplásticos", "Corais quebrados", "Água doce"],
+    "resposta": "Microplásticos"
+  },
+  {
+    "pergunta": "Por que o óleo no mar é perigoso?",
+    "alternativas": ["Forma uma camada tóxica", "Ajuda a aquecer a água", "Atrai golfinhos", "Clareia o oceano"],
+    "resposta": "Forma uma camada tóxica"
+  },
+  {
+    "pergunta": "Como o lixo urbano chega aos oceanos?",
+    "alternativas": ["Por evaporação", "Por correntes de ar", "Por rios e bueiros", "Pelo fundo do mar"],
+    "resposta": "Por rios e bueiros"
+  },
+  {
+    "pergunta": "Como a poluição afeta a pesca?",
+    "alternativas": ["Aumenta a quantidade de peixes", "Não interfere", "Reduz peixes disponíveis", "Melhora o sabor do peixe"],
+    "resposta": "Reduz peixes disponíveis"
+  },
+  {
+    "pergunta": "Quanto tempo dura um canudo no mar?",
+    "alternativas": ["5 anos", "10 anos", "Mais de 200 anos", "1 ano"],
+    "resposta": "Mais de 200 anos"
+  },
+  {
+    "pergunta": "O que acontece com o lixo no fundo do mar?",
+    "alternativas": ["Desaparece", "Afeta os ecossistemas", "Vira areia", "É comido por tubarões"],
+    "resposta": "Afeta os ecossistemas"
+  },
+  {
+    "pergunta": "Por que a educação ambiental é importante?",
+    "alternativas": ["Promove consciência e ação", "Aumenta turismo", "Garante mais lixo", "Desvaloriza praias"],
+    "resposta": "Promove consciência e ação"
+  },
+  {
+    "pergunta": "Por que os oceanos são importantes?",
+    "alternativas": ["Para lazer", "Regulam o clima e fornecem alimento", "Servem de lixo", "Aumentam o calor"],
+    "resposta": "Regulam o clima e fornecem alimento"
+  },
+  {
+    "pergunta": "Como o lixo interfere no turismo?",
+    "alternativas": ["Deixa praias coloridas", "Atrai animais", "Desvaloriza as praias", "Ajuda na limpeza"],
+    "resposta": "Desvaloriza as praias"
+  },
+  {
+    "pergunta": "O que é contaminação química no mar?",
+    "alternativas": ["Cheiro forte", "Substâncias tóxicas na água", "Ondas sujas", "Algas vermelhas"],
+    "resposta": "Substâncias tóxicas na água"
+  },
+  {
+    "pergunta": "Como o óleo afeta as penas das aves?",
+    "alternativas": ["Deixa mais brilhantes", "Ajuda a voar", "Perdem a impermeabilidade", "Ficam coloridas"],
+    "resposta": "Perdem a impermeabilidade"
+  },
+  {
+    "pergunta": "Qual o efeito do plástico nos filhotes marinhos?",
+    "alternativas": ["Ajuda na digestão", "Melhora o crescimento", "Causa sufocamento e desnutrição", "Atrai predadores"],
+    "resposta": "Causa sufocamento e desnutrição"
+  },
+  {
+    "pergunta": "Quais são os 3 animais que confundem o lixo marítimo com alimento?",
+    "alternativas": ["Cavalos-marinhos, golfinhos e tubarões", "Peixes, algas e baleias", "Aves, tartarugas e peixes", "Polvos, estrelas e algas"],
+    "resposta": "Aves, tartarugas e peixes"
+  },
+  {
+    "pergunta": "Como o lixo afeta a cadeia alimentar?",
+    "alternativas": ["Não afeta", "Faz os animais crescerem", "Passa de um animal ao outro", "Deixa a água limpa"],
+    "resposta": "Passa de um animal ao outro"
+  },
+  {
+    "pergunta": "Por que o mercúrio é perigoso no mar?",
+    "alternativas": ["Ajuda na digestão", "Contamina peixes e humanos", "Cria bolhas na água", "Atrai aves"],
+    "resposta": "Contamina peixes e humanos"
+  },
+  {
+    "pergunta": "Como a chuva pode levar lixo ao mar?",
+    "alternativas": ["Evapora com lixo", "Arrasta pelos bueiros", "Suga pelas raízes", "Empurra com vento"],
+    "resposta": "Arrasta pelos bueiros"
+  },
+  {
+    "pergunta": "Por que o plástico flutua nos oceanos?",
+    "alternativas": ["É leve e não se decompõe", "Atrai ar", "É comido por peixes", "Afunda devagar"],
+    "resposta": "É leve e não se decompõe"
+  },
+  {
+    "pergunta": "O que são ilhas de lixo?",
+    "alternativas": ["Ilhas com turismo", "Ilhas com corais", "Acúmulo de resíduos no oceano", "Espaço para barcos"],
+    "resposta": "Acúmulo de resíduos no oceano"
+  },
+  {
+    "pergunta": "O que acontece quando um peixe come plástico?",
+    "alternativas": ["Fica mais forte", "Pode morrer por bloqueio intestinal", "Nada mais rápido", "Cria ovos de plástico"],
+    "resposta": "Pode morrer por bloqueio intestinal"
+  },
+  {
+    "pergunta": "Qual resíduo leva mais tempo para desaparecer no mar?",
+    "alternativas": ["Sacolas", "Papel", "Garrafas plásticas", "Palitos de dente"],
+    "resposta": "Garrafas plásticas"
+  },
+  {
+    "pergunta": "Qual é o impacto das correntes marítimas na poluição?",
+    "alternativas": ["Removem o lixo", "Espalham o lixo pelo oceano", "Filtram a água", "Criam ilhas limpas"],
+    "resposta": "Espalham o lixo pelo oceano"
+  }
+]
+}
