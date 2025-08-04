@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabuleiro - Jogo de Tabuleiro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <style>
+    .tabuleiro-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #imagemTabuleiro {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+
+    .personagem {
+      position: absolute;
+      width: 100px;
+      -webkit-user-drag: none;
+      pointer-events: auto;
+      user-select: none;
+      touch-action: none;
+    }
+
+    button {
+      background-color: #00bcd4;
+      padding: 12px 25px;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      font-family: 'Comic Sans MS', cursive;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+      transform: scale(1.05);
+    }
+
+    .tabuleiro-botoes {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabuleiro-container">
+    <h2>🗺️ Tabuleiro</h2>
+    <div style="position: relative; display: inline-block;">
+      <img src="{{ url_for('static', filename='tabuleiro.jpg') }}" id="imagemTabuleiro">
+      <img src="{{ url_for('static', filename='menino.png') }}" class="personagem" id="p1">
+      <img src="{{ url_for('static', filename='menina.png') }}" class="personagem" id="p2">
+    </div>
+
+    <div class="tabuleiro-botoes">
+      <a href="{{ url_for('perguntas') }}"><button>❓ Voltar para as Perguntas</button></a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="{{ url_for('static', filename='jogo.js') }}"></script>
+  <script src="{{ url_for('static', filename='arrastar.js') }}"></script>
+
+  <!-- Bolhas decorativas FORA do container -->
+  <div class="bolhas">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span>
+  </div>
+</body>
+</html>

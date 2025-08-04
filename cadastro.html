@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro dos Jogadores</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- Conteúdo central -->
+  <div class="container">
+    <h1>Cadastro dos Jogadores</h1>
+
+    <form method="POST" class="botoes-cadastro">
+      <input type="text" name="jogador1" placeholder="Nome do Jogador 1" required>
+      <input type="text" name="jogador2" placeholder="Nome do Jogador 2" required>
+
+      <button type="submit" class="botao-entrar">Cadastrar Jogadores</button>
+
+      {% if mensagem %}
+        <p class="mensagem-sucesso">{{ mensagem }}</p>
+      {% endif %}
+
+      {% if jogadores_cadastrados %}
+        <a href="{{ url_for('perguntas') }}" class="botao-entrar jogar">Jogar</a>
+      {% endif %}
+    </form>
+  </div>
+
+  <!-- Bolhas decorativas FORA do container -->
+  <div class="bolhas">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span>
+  </div>
+
+</body>
+</html>

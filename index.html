@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jogo do Conhecimento</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Vamos testar os seus conhecimentos com diversão!</h1>
+    <a href="{{ url_for('cadastro') }}" class="botao-entrar">Entrar</a>
+  </div>
+
+  <!-- Bolhas decorativas -->
+  <div class="bolhas">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span>
+  </div>
+
+  <!-- Peixes decorativos -->
+  <img src="{{ url_for('static', filename='imagens/peixe1.png') }}" class="peixe peixe1">
+  <img src="{{ url_for('static', filename='imagens/peixe2.png') }}" class="peixe peixe2">
+  <img src="{{ url_for('static', filename='imagens/peixe3.png') }}" class="peixe peixe3">
+  <img src="{{ url_for('static', filename='imagens/peixe4.png') }}" class="peixe peixe4">
+  <img src="{{ url_for('static', filename='imagens/peixe5.png') }}" class="peixe peixe5">
+</body>
+</html>

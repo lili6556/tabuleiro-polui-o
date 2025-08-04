@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dado - Jogo de Tabuleiro</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dado-container">
+    <h2 class="titulo-dado">🎲 Girar o Dado</h2>
+
+    <div class="dado-box">
+      <img id="imagemDado" src="{{ url_for('static', filename='dado1.png') }}" width="120">
+      <br>
+      <button class="botao-dado" id="botaoGirar">Girar Dado</button>
+      <p class="valor-dado" id="valorDado">Clique para girar 🎲</p>
+    </div>
+
+    <div class="dado-botoes">
+      <a href="{{ url_for('perguntas') }}"><button class="botao-voltar">🔙 Voltar para as Perguntas</button></a>
+      <a href="{{ url_for('tabuleiro') }}"><button class="botao-ir">➡️ Ir para o Tabuleiro</button></a>
+    </div>
+  </div>
+
+  <!-- Bolhas decorativas -->
+  <div class="bolhas">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span>
+  </div>
+
+  <script src="{{ url_for('static', filename='jogo.js') }}"></script>
+</body>
+</html>

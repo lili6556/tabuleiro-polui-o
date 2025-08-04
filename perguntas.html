@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perguntas</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Vez de {{ jogador_atual }}</h1>
+
+    {% if mensagem_resultado %}
+      <div class="mensagem">
+        <h2>{{ mensagem_resultado }}</h2>
+        {% if mostrar_botao_dado %}
+          <a href="{{ url_for('dado') }}" class="botao-entrar">Ir para o dado</a>
+        {% endif %}
+      </div>
+    {% else %}
+      <form method="POST" class="pergunta-box">
+        <h2>{{ pergunta['pergunta'] }}</h2>
+
+        <div class="alternativas">
+          {% for alternativa in pergunta['alternativas'] %}
+            <label>
+              <input type="radio" name="resposta" value="{{ alternativa }}" required>
+              {{ alternativa }}
+            </label>
+          {% endfor %}
+        </div>
+
+        <div class="botoes-acoes">
+          <button type="submit" class="botao-entrar">Responder</button>
+        </div>
+      </form>
+    {% endif %}
+
+    <div class="botoes-acoes" style="margin-top: 20px;">
+      <form method="POST" action="{{ url_for('pular_vez') }}" style="display: inline;">
+        <button type="submit" class="botao-entrar">Pular a vez</button>
+      </form>
+
+      <form method="POST" action="{{ url_for('pular_pergunta') }}" style="display: inline;">
+        <button type="submit" class="botao-entrar">Pular pergunta</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bolhas decorativas -->
+  <div class="bolhas">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span>
+  </div>
+</body>
+</html>
