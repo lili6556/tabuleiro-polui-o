@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir --upgrade pip setuptools && \
 COPY . .
 
 # Expor a porta que a aplicação Flask vai rodar
-EXPOSE 5000
+EXPOSE 8200
 
 # Comando para rodar a aplicação com Gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8200", "app:app"]

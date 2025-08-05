@@ -6,6 +6,6 @@ services:  # Definição dos serviços
     volumes:
       - .:/projeto-alicia  # Montar o diretório atual no contêiner
     ports:
-      - "5000:5000"  # Mapear a porta 6000 do contêiner para a porta 6000 do host
+      - "8200:8200"  # Mapear a porta 6000 do contêiner para a porta 6000 do host
     environment:
       FLASK_ENV: development  # Configuração do ambiente Flask
