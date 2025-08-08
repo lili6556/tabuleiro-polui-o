@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+    <style>
+        body {
+            font-family: 'Luckiest Guy', cursive, sans-serif;
+            background: linear-gradient(to bottom, #a0d8ef, #0099cc);
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .resultado {
+            font-size: 32px;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            margin: auto;
+            width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        .botao-voltar {
+            margin-top: 30px;
+            padding: 10px 30px;
+            background-color: #00bfff;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .botao-voltar:hover {
+            background-color: #007acc;
+        }
+    </style>
+</head>
+<body>
+    <div class="resultado">
+        {{ resultado }}
+    </div>
+
+    <form action="{{ url_for('perguntas') }}">
+        <button class="botao-voltar" type="submit">Próxima Pergunta</button>
+    </form>
+</body>
+</html>
