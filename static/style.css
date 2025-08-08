@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Arial', cursive, sans-serif;
   background: linear-gradient(to bottom, #a2d4f5, #005f8a);
   overflow-x: hidden;
   position: relative;
@@ -191,7 +191,7 @@ input[type="text"]:focus {
 }
 
 .titulo-dado {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Arial', cursive;
   font-size: 2.5em;
   color: #fff;
   margin-bottom: 25px;
@@ -224,7 +224,7 @@ input[type="text"]:focus {
   border-radius: 30px;
   border: none;
   cursor: pointer;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Arial', cursive;
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   transition: background 0.3s, transform 0.2s;
 }
@@ -248,7 +248,7 @@ input[type="text"]:focus {
   font-size: 1.1em;
   border-radius: 25px;
   border: none;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Arial', cursive;
   color: #fff;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
