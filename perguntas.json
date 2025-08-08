@@ -1,174 +1,154 @@
 {
-  "perguntas": [
-    {
-      "pergunta": "O que é poluição marítima?",
-      "alternativas": ["Acúmulo de sedimentos naturais", "Alteração química e física da água por atividades humanas", "Mistura natural de sais e minerais", "Processo de evaporação oceânica"],
-      "resposta": "Alteração química e física da água por atividades humanas"
-    },
-    {
-      "pergunta": "O que é microplástico?",
-      "alternativas": ["Resíduo plástico com menos de 5 mm", "Fragmentos de vidro marinho", "Partículas de sílica", "Grânulos de resina vegetal"],
-      "resposta": "Resíduo plástico com menos de 5 mm"
-    },
-    {
-      "pergunta": "Impacto do óleo no mar?",
-      "alternativas": ["Redução da penetração de luz e intoxicação da fauna", "Aumento da temperatura superficial", "Neutralização de sais minerais", "Favorecimento da fotossíntese marinha"],
-      "resposta": "Redução da penetração de luz e intoxicação da fauna"
-    },
-    {
-      "pergunta": "Solução para o lixo?",
-      "alternativas": ["Logística reversa e redução na fonte", "Dispersão em mar aberto", "Armazenamento em recifes artificiais", "Despejo em áreas desabitadas"],
-      "resposta": "Logística reversa e redução na fonte"
-    },
-    {
-      "pergunta": "O que mais polui os oceanos?",
-      "alternativas": ["Descargas de plástico pós-consumo", "Sedimentos vulcânicos", "Fragmentos de conchas", "Biomassa de algas"],
-      "resposta": "Descargas de plástico pós-consumo"
-    },
-    {
-      "pergunta": "Qual tipo de plástico é mais comum no mar?",
-      "alternativas": ["Embalagens descartáveis e garrafas PET", "Componentes de computadores", "Utensílios de madeira laminada", "Painéis de fibra vegetal"],
-      "resposta": "Embalagens descartáveis e garrafas PET"
-    },
-    {
-      "pergunta": "Como o esgoto chega ao mar?",
-      "alternativas": ["Por emissários submarinos sem tratamento", "Por evaporação e condensação", "Por infiltração subterrânea", "Por deslocamento de placas tectônicas"],
-      "resposta": "Por emissários submarinos sem tratamento"
-    },
-    {
-      "pergunta": "O que os peixes podem ingerir?",
-      "alternativas": ["Microplásticos confundidos com zooplâncton", "Partículas de calcário marinho", "Cristais de sal mineral", "Fragmentos de algas calcárias"],
-      "resposta": "Microplásticos confundidos com zooplâncton"
-    },
-    {
-      "pergunta": "Por que o óleo no mar é perigoso?",
-      "alternativas": ["Forma barreira superficial que impede troca gasosa", "Aumenta a alcalinidade da água", "Funciona como isolante térmico benéfico", "Neutraliza ácidos orgânicos"],
-      "resposta": "Forma barreira superficial que impede troca gasosa"
-    },
-    {
-      "pergunta": "Como o lixo urbano chega aos oceanos?",
-      "alternativas": ["Transporte por rios, canais e drenagem pluvial", "Infiltração pelo subsolo", "Evaporação com resíduos", "Correntes magnéticas oceânicas"],
-      "resposta": "Transporte por rios, canais e drenagem pluvial"
-    },
-    {
-      "pergunta": "Como a poluição afeta a pesca?",
-      "alternativas": ["Diminuição de estoques pesqueiros e contaminação da fauna", "Aumento da biomassa de espécies comerciais", "Estabilização da cadeia trófica", "Neutralização de parasitas"],
-      "resposta": "Diminuição de estoques pesqueiros e contaminação da fauna"
-    },
-    {
-      "pergunta": "Quanto tempo dura um canudo no mar?",
-      "alternativas": ["Mais de 200 anos", "Entre 5 e 10 anos", "Cerca de 50 anos", "Aproximadamente 20 anos"],
-      "resposta": "Mais de 200 anos"
-    },
-    {
-      "pergunta": "O que acontece com o lixo no fundo do mar?",
-      "alternativas": ["Provoca degradação de habitats bentônicos", "Se dissolve em poucas semanas", "Aumenta a produtividade primária", "Atua como substrato seguro para fauna"],
-      "resposta": "Provoca degradação de habitats bentônicos"
-    },
-    {
-      "pergunta": "Por que a educação ambiental é importante?",
-      "alternativas": ["Promove mudanças comportamentais sustentáveis", "Estimula o consumo rápido", "Aumenta a ocupação desordenada", "Facilita a deposição de resíduos no mar"],
-      "resposta": "Promove mudanças comportamentais sustentáveis"
-    },
-    {
-      "pergunta": "Por que os oceanos são importantes?",
-      "alternativas": ["Regulam o clima, produzem oxigênio e fornecem alimento", "Apenas para lazer e turismo", "Servem para descarte industrial", "Para aumentar a umidade continental"],
-      "resposta": "Regulam o clima, produzem oxigênio e fornecem alimento"
-    },
-    {
-      "pergunta": "Como o lixo interfere no turismo?",
-      "alternativas": ["Prejudica a atratividade das praias e balneabilidade", "Aumenta a biodiversidade costeira", "Melhora o acesso às áreas de pesca", "Funciona como barreira contra erosão"],
-      "resposta": "Prejudica a atratividade das praias e balneabilidade"
-    },
-    {
-      "pergunta": "O que é contaminação química no mar?",
-      "alternativas": ["Presença de poluentes sintéticos e metais pesados", "Aumento natural da salinidade", "Deposição de areia e cascalho", "Movimento de correntes quentes"],
-      "resposta": "Presença de poluentes sintéticos e metais pesados"
-    },
-    {
-      "pergunta": "Como o óleo afeta as penas das aves?",
-      "alternativas": ["Remove a impermeabilidade e reduz isolamento térmico", "Aumenta a flutuabilidade", "Favorece voo de longa distância", "Protege contra predadores"],
-      "resposta": "Remove a impermeabilidade e reduz isolamento térmico"
-    },
-    {
-      "pergunta": "Qual o efeito do plástico nos filhotes marinhos?",
-      "alternativas": ["Provoca obstrução digestiva e desnutrição", "Favorece o crescimento", "Fortalece ossos", "Aumenta velocidade de natação"],
-      "resposta": "Provoca obstrução digestiva e desnutrição"
-    },
-    {
-      "pergunta": "Quais são os 3 animais que confundem o lixo marítimo com alimento?",
-      "alternativas": ["Aves marinhas, tartarugas e peixes", "Estrelas-do-mar, golfinhos e polvos", "Corais, camarões e focas", "Lulas, algas e tubarões"],
-      "resposta": "Aves marinhas, tartarugas e peixes"
-    },
-    {
-      "pergunta": "Como o lixo afeta a cadeia alimentar?",
-      "alternativas": ["Bioacumulação e biomagnificação de contaminantes", "Aumenta o tamanho médio dos predadores", "Neutraliza toxinas naturais", "Diminui a competição por alimento"],
-      "resposta": "Bioacumulação e biomagnificação de contaminantes"
-    },
-    {
-      "pergunta": "Por que o mercúrio é perigoso no mar?",
-      "alternativas": ["Acumula-se na cadeia trófica causando danos neurológicos", "Aumenta a fotossíntese marinha", "Neutraliza poluentes", "Reduz o pH da água"],
-      "resposta": "Acumula-se na cadeia trófica causando danos neurológicos"
-    },
-    {
-      "pergunta": "Como a chuva pode levar lixo ao mar?",
-      "alternativas": ["Carreamento por enxurradas para sistemas de drenagem", "Evaporação seguida de condensação", "Infiltração em aquíferos", "Elevação de marés"],
-      "resposta": "Carreamento por enxurradas para sistemas de drenagem"
-    },
-    {
-      "pergunta": "Por que o plástico flutua nos oceanos?",
-      "alternativas": ["Baixa densidade e resistência à degradação", "Interação com correntes frias", "Absorção de gases", "Formação de bolhas de ar internas"],
-      "resposta": "Baixa densidade e resistência à degradação"
-    },
-    {
-      "pergunta": "O que são ilhas de lixo?",
-      "alternativas": ["Concentrações flutuantes de resíduos sólidos", "Acúmulo de sedimentos arenosos", "Formações rochosas artificiais", "Áreas de preservação permanente"],
-      "resposta": "Concentrações flutuantes de resíduos sólidos"
-    },
-    {
-      "pergunta": "O que acontece quando um peixe come plástico?",
-      "alternativas": ["Pode sofrer obstrução e morte por inanição", "Melhora a digestão", "Aumenta a resistência física", "Produz fibras artificiais"],
-      "resposta": "Pode sofrer obstrução e morte por inanição"
-    },
-    {
-      "pergunta": "Qual resíduo leva mais tempo para desaparecer no mar?",
-      "alternativas": ["Garrafas PET", "Sacolas plásticas", "Bitucas de cigarro", "Redes de pesca de nylon"],
-      "resposta": "Garrafas PET"
-    },
-    {
-      "pergunta": "Qual é o impacto das correntes marítimas na poluição?",
-      "alternativas": ["Dispersam poluentes em áreas distantes", "Filtram partículas sólidas", "Aumentam a oxigenação", "Diminuem o acúmulo de resíduos"],
-      "resposta": "Dispersam poluentes em áreas distantes"
-    },
-    {
-      "pergunta": "A pesca fantasma é causada por:",
-      "alternativas": ["Equipamentos de pesca abandonados que continuam capturando animais", "Ausência de fiscalização pesqueira", "Pesca noturna em águas profundas", "Uso de redes de arrasto"],
-      "resposta": "Equipamentos de pesca abandonados que continuam capturando animais"
-    },
-    {
-      "pergunta": "Qual alternativa é errada sobre poluição marinha?",
-      "alternativas": ["Ela pode afetar a saúde humana", "Ela ajuda na reprodução de algas saudáveis", "Ela reduz a biodiversidade marinha", "Ela pode ser causada por lixo descartado em rios"],
-      "resposta": "Ela ajuda na reprodução de algas saudáveis"
-    },
-    {
-      "pergunta": "O que pode acontecer com recifes de coral expostos a poluição química?",
-      "alternativas": ["Sofrem branqueamento e morrem", "Crescem mais rápido", "Mudam de cor para azul", "Ficam imunes a tempestades"],
-      "resposta": "Sofrem branqueamento e morrem"
-    },
-    {
-      "pergunta": "Qual é a principal consequência da ingestão de microplásticos por animais marinhos?",
-      "alternativas": ["Bloqueio intestinal e morte por inanição", "Aumento da absorção de nutrientes", "Melhora na digestão de algas", "Fortalecimento da estrutura óssea"],
-      "resposta": "Bloqueio intestinal e morte por inanição"
-    },
-    {
-      "pergunta": "Qual é o impacto mais grave do derramamento de óleo nos ecossistemas costeiros?",
-      "alternativas": ["Destruição de habitats e intoxicação da fauna", "Aumento da produtividade pesqueira", "Filtragem natural de metais pesados", "Neutralização de marés vermelhas"],
-      "resposta": "Destruição de habitats e intoxicação da fauna"
-    },
-    {
-      "pergunta": "Qual é a principal fonte de lixo plástico encontrado nos oceanos?",
-      "alternativas": ["Descarte inadequado de resíduos urbanos", "Erosão de falésias", "Erupções vulcânicas submarinas", "Deposição natural de matéria orgânica"],
-      "resposta": "Descarte inadequado de resíduos urbanos"
-    }
-  ]
+ "perguntas": [
+  {
+    "pergunta": "O que é poluição marítima?",
+    "alternativas": ["Recifes de coral", "Peixes nadando", "Lixo e sujeira no mar", "Água limpa e salgada"],
+    "resposta": "Lixo e sujeira no mar"
+  },
+  {
+    "pergunta": "O que é microplástico?",
+    "alternativas": ["Poeira do solo", "Grãos de areia", "Plástico bem pequeno", "Insetos marinhos"],
+    "resposta": "Plástico bem pequeno"
+  },
+  {
+    "pergunta": "Impacto do óleo no mar?",
+    "alternativas": ["Melhora o brilho da água", "Mata animais", "Ajuda na navegação", "Alimenta peixes"],
+    "resposta": "Mata animais"
+  },
+  {
+    "pergunta": "Solução pro lixo?",
+    "alternativas": ["Jogar no mar", "Reduzir e reciclar", "Esconder em praias", "Deixar nos rios"],
+    "resposta": "Reduzir e reciclar"
+  },
+  {
+    "pergunta": "O que mais polui os oceanos?",
+    "alternativas": ["Navios petroleiros", "Areia", "Plástico descartado", "Peixes mortos"],
+    "resposta": "Plástico descartado"
+  },
+  {
+    "pergunta": "Qual tipo de plástico é mais comum no mar?",
+    "alternativas": ["Brinquedos", "Tubos de PVC", "Sacolas e garrafas", "Cadeiras de praia"],
+    "resposta": "Sacolas e garrafas"
+  },
+  {
+    "pergunta": "Como o esgoto chega ao mar?",
+    "alternativas": ["Por chuvas naturais", "Por evaporar", "Por tubulações sem tratamento", "Por animais marinhos"],
+    "resposta": "Por tubulações sem tratamento"
+  },
+  {
+    "pergunta": "O que os peixes podem ingerir?",
+    "alternativas": ["Plâncton artificial", "Microplásticos", "Corais quebrados", "Água doce"],
+    "resposta": "Microplásticos"
+  },
+  {
+    "pergunta": "Por que o óleo no mar é perigoso?",
+    "alternativas": ["Forma uma camada tóxica", "Ajuda a aquecer a água", "Atrai golfinhos", "Clareia o oceano"],
+    "resposta": "Forma uma camada tóxica"
+  },
+  {
+    "pergunta": "Como o lixo urbano chega aos oceanos?",
+    "alternativas": ["Por evaporação", "Por correntes de ar", "Por rios e bueiros", "Pelo fundo do mar"],
+    "resposta": "Por rios e bueiros"
+  },
+  {
+    "pergunta": "Como a poluição afeta a pesca?",
+    "alternativas": ["Aumenta a quantidade de peixes", "Não interfere", "Reduz peixes disponíveis", "Melhora o sabor do peixe"],
+    "resposta": "Reduz peixes disponíveis"
+  },
+  {
+    "pergunta": "Quanto tempo dura um canudo no mar?",
+    "alternativas": ["5 anos", "10 anos", "Mais de 200 anos", "1 ano"],
+    "resposta": "Mais de 200 anos"
+  },
+  {
+    "pergunta": "O que acontece com o lixo no fundo do mar?",
+    "alternativas": ["Desaparece", "Afeta os ecossistemas", "Vira areia", "É comido por tubarões"],
+    "resposta": "Afeta os ecossistemas"
+  },
+  {
+    "pergunta": "Por que a educação ambiental é importante?",
+    "alternativas": ["Promove consciência e ação", "Aumenta turismo", "Garante mais lixo", "Desvaloriza praias"],
+    "resposta": "Promove consciência e ação"
+  },
+  {
+    "pergunta": "Por que os oceanos são importantes?",
+    "alternativas": ["Para lazer", "Regulam o clima e fornecem alimento", "Servem de lixo", "Aumentam o calor"],
+    "resposta": "Regulam o clima e fornecem alimento"
+  },
+  {
+    "pergunta": "Como o lixo interfere no turismo?",
+    "alternativas": ["Deixa praias coloridas", "Atrai animais", "Desvaloriza as praias", "Ajuda na limpeza"],
+    "resposta": "Desvaloriza as praias"
+  },
+  {
+    "pergunta": "O que é contaminação química no mar?",
+    "alternativas": ["Cheiro forte", "Substâncias tóxicas na água", "Ondas sujas", "Algas vermelhas"],
+    "resposta": "Substâncias tóxicas na água"
+  },
+  {
+    "pergunta": "Como o óleo afeta as penas das aves?",
+    "alternativas": ["Deixa mais brilhantes", "Ajuda a voar", "Perdem a impermeabilidade", "Ficam coloridas"],
+    "resposta": "Perdem a impermeabilidade"
+  },
+  {
+    "pergunta": "Qual o efeito do plástico nos filhotes marinhos?",
+    "alternativas": ["Ajuda na digestão", "Melhora o crescimento", "Causa sufocamento e desnutrição", "Atrai predadores"],
+    "resposta": "Causa sufocamento e desnutrição"
+  },
+  {
+    "pergunta": "Quais são os 3 animais que confundem o lixo marítimo com alimento?",
+    "alternativas": ["Cavalos-marinhos, golfinhos e tubarões", "Peixes, algas e baleias", "Aves, tartarugas e peixes", "Polvos, estrelas e algas"],
+    "resposta": "Aves, tartarugas e peixes"
+  },
+  {
+    "pergunta": "Como o lixo afeta a cadeia alimentar?",
+    "alternativas": ["Não afeta", "Faz os animais crescerem", "Passa de um animal ao outro", "Deixa a água limpa"],
+    "resposta": "Passa de um animal ao outro"
+  },
+  {
+    "pergunta": "Por que o mercúrio é perigoso no mar?",
+    "alternativas": ["Ajuda na digestão", "Contamina peixes e humanos", "Cria bolhas na água", "Atrai aves"],
+    "resposta": "Contamina peixes e humanos"
+  },
+  {
+    "pergunta": "Como a chuva pode levar lixo ao mar?",
+    "alternativas": ["Evapora com lixo", "Arrasta pelos bueiros", "Suga pelas raízes", "Empurra com vento"],
+    "resposta": "Arrasta pelos bueiros"
+  },
+  {
+    "pergunta": "Por que o plástico flutua nos oceanos?",
+    "alternativas": ["É leve e não se decompõe", "Atrai ar", "É comido por peixes", "Afunda devagar"],
+    "resposta": "É leve e não se decompõe"
+  },
+  {
+    "pergunta": "O que são ilhas de lixo?",
+    "alternativas": ["Ilhas com turismo", "Ilhas com corais", "Acúmulo de resíduos no oceano", "Espaço para barcos"],
+    "resposta": "Acúmulo de resíduos no oceano"
+  },
+  {
+    "pergunta": "O que acontece quando um peixe come plástico?",
+    "alternativas": ["Fica mais forte", "Pode morrer por bloqueio intestinal", "Nada mais rápido", "Cria ovos de plástico"],
+    "resposta": "Pode morrer por bloqueio intestinal"
+  },
+  {
+    "pergunta": "Qual resíduo leva mais tempo para desaparecer no mar?",
+    "alternativas": ["Sacolas", "Papel", "Garrafas plásticas", "Palitos de dente"],
+    "resposta": "Garrafas plásticas"
+  },
+  {
+    "pergunta": "Qual é o impacto das correntes marítimas na poluição?",
+    "alternativas": ["Removem o lixo", "Espalham o lixo pelo oceano", "Filtram a água", "Criam ilhas limpas"],
+    "resposta": "Espalham o lixo pelo oceano"
+  }, 
+  {
+    "pergunta": "A pesca fantasma é causada por:",
+    "alternativas": ["Tubarões em rede", "Equipamentos de pesca abandonados", "Falta de iluminação nos barcos", "Pesca em dias nublados"],
+    "resposta": "Equipamentos de pesca abandonados"
+  },
+   {
+    "pergunta": "Qual alternativa é errada sobre poluição marinha?",
+    "alternativas": ["Ela pode afetar a saúde humana", "Ela ajuda na reprodução de algas saudáveis", "Ela reduz a biodiversidade marinha", "Ela pode ser causada por lixo descartado em rios"],
+    "resposta": "Ela ajuda na reprodução de algas saudáveis"
+  }
+]
 }
