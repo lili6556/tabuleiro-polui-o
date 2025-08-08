@@ -58,18 +58,25 @@ def cadastro():
 def perguntas():
     perguntas = session.get("perguntas_restantes", [])
     nomes = session.get("nomes_jogadores")
-    estado = session.get("estado")
+    estado = session.get("estado", {"respondeu_errado_anterior": False})
 
     if not nomes or not isinstance(nomes, dict):
         return redirect(url_for("cadastro"))
 
-    if not perguntas:
+    if not perguntas and not session.get("pergunta_atual"):
         return "Acabaram as perguntas!"
 
-    jogador_num = str(session.get("jogador_atual", 1))
-    jogador_atual = nomes.get(jogador_num, f"Jogador {jogador_num}")
+    jogador_num = session.get("jogador_atual", 1)
+    jogador_atual = nomes.get(str(jogador_num), f"Jogador {jogador_num}")
     resultado = None
     mostrar_botao_dado = False
+
+    # Trata ação de pular vez
+    if request.args.get("acao") == "pular_vez":
+        estado["respondeu_errado_anterior"] = False  # reseta o erro
+        session["jogador_atual"] = 2 if session["jogador_atual"] == 1 else 1
+        session["estado"] = estado
+        return redirect(url_for("perguntas"))
 
     if request.method == "POST":
         resposta = request.form.get("resposta")
@@ -77,46 +84,66 @@ def perguntas():
         correta = pergunta_atual.get("resposta")
 
         if resposta == correta:
-            session["estado"]["respondeu_errado_anterior"] = False
             resultado = "Acertou!"
             mostrar_botao_dado = True
+            estado["respondeu_errado_anterior"] = False
+
+            if pergunta_atual in perguntas:
+                perguntas.remove(pergunta_atual)
+            session["pergunta_atual"] = None
+
         else:
-            if not session["estado"]["respondeu_errado_anterior"]:
-                # Primeira tentativa errada, troca o jogador
-                session["estado"]["respondeu_errado_anterior"] = True
+            if not estado["respondeu_errado_anterior"]:
+                estado["respondeu_errado_anterior"] = True
                 session["jogador_atual"] = 2 if session["jogador_atual"] == 1 else 1
             else:
-                # Segunda tentativa errada, nova pergunta, volta jogador
-                session["estado"]["respondeu_errado_anterior"] = False
+                estado["respondeu_errado_anterior"] = False
                 session["jogador_atual"] = 2 if session["jogador_atual"] == 1 else 1
-                if perguntas:
-                    nova_pergunta = random.choice(perguntas)
-                    perguntas.remove(nova_pergunta)
-                    session["pergunta_atual"] = nova_pergunta
-                    session["perguntas_restantes"] = perguntas
+
+                if pergunta_atual in perguntas:
+                    perguntas.remove(pergunta_atual)
+                session["pergunta_atual"] = None
+
             resultado = "Errou!"
 
-    # GET: nova pergunta se não tiver ou se for nova tentativa
-    if not session.get("pergunta_atual") or not estado["respondeu_errado_anterior"]:
-        pergunta = random.choice(perguntas)
-        perguntas.remove(pergunta)
-        session["pergunta_atual"] = pergunta
+        session["estado"] = estado
         session["perguntas_restantes"] = perguntas
-    else:
-        pergunta = session["pergunta_atual"]
+
+    if not session.get("pergunta_atual") and perguntas:
+        nova_pergunta = random.choice(perguntas)
+        session["pergunta_atual"] = nova_pergunta
+
+    pergunta = session.get("pergunta_atual")
 
     return render_template("perguntas.html",
                            pergunta=pergunta,
                            jogador_atual=jogador_atual,
                            mensagem_resultado=resultado,
-                           mostrar_botao_dado=mostrar_botao_dado)
+                           mostrar_botao_dado=mostrar_botao_dado,
+                           mostrar_botao_continuar=resultado == "Errou!")
+
+@app.route("/continuar", methods=["POST"])
+def continuar():
+    if "indice_pergunta_atual" not in session:
+        session["indice_pergunta_atual"] = 0  # ou outro valor inicial
+    
+    session["indice_pergunta_atual"] += 1
+    
+    return redirect(url_for("perguntas"))
 
 
 @app.route("/pular_vez", methods=["POST"])
 def pular_vez():
     atual = session.get("jogador_atual", 1)
     session["jogador_atual"] = 2 if atual == 1 else 1
+
+    # Zera os estados de controle
+    session["respondeu_certo"] = False
+    session["aguardando_outro"] = False
+
     return redirect(url_for("perguntas"))
+
+
 
 @app.route("/pular_pergunta", methods=["POST"])
 def pular_pergunta():
