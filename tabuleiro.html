@@ -19,17 +19,26 @@
 
     #imagemTabuleiro {
       width: 100%;
-      max-width: 600px;
+      max-width: 700px;
       height: auto;
+      display: block;
+      border-radius: 10px;
     }
 
     .personagem {
       position: absolute;
       width: 100px;
-      -webkit-user-drag: none;
-      pointer-events: auto;
-      user-select: none;
       touch-action: none;
+      user-select: none;
+      cursor: grab;
+    }
+
+    .personagem:active {
+      cursor: grabbing;
+    }
+
+    .tabuleiro-botoes {
+      margin-top: 30px;
     }
 
     button {
@@ -37,7 +46,7 @@
       padding: 12px 25px;
       color: white;
       border: none;
-      border-radius: 20px;
+      border-radius: 30px;
       font-size: 1.1em;
       cursor: pointer;
       transition: background 0.3s, transform 0.2s;
@@ -49,15 +58,12 @@
       background-color: #0097a7;
       transform: scale(1.05);
     }
-
-    .tabuleiro-botoes {
-      margin-top: 20px;
-    }
   </style>
 </head>
 <body>
   <div class="tabuleiro-container">
-    <h2>🗺️ Tabuleiro</h2>
+    <h2>📖 Tabuleiro</h2>
+    <h2>(Clique e arraste para mexer nos personagens)</h2>
     <div style="position: relative; display: inline-block;">
       <img src="{{ url_for('static', filename='tabuleiro.jpg') }}" id="imagemTabuleiro">
       <img src="{{ url_for('static', filename='menino.png') }}" class="personagem" id="p1">
@@ -69,14 +75,82 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="{{ url_for('static', filename='jogo.js') }}"></script>
-  <script src="{{ url_for('static', filename='arrastar.js') }}"></script>
+  <script>
+    const personagem1 = document.getElementById("p1");
+    const personagem2 = document.getElementById("p2");
 
-  <!-- Bolhas decorativas FORA do container -->
-  <div class="bolhas">
-    <span></span><span></span><span></span><span></span>
-    <span></span><span></span>
-  </div>
+    const posicoesSalvas = JSON.parse(localStorage.getItem("posicoesJogadores")) || {
+      jogador1: { x: 65, y: 18 },
+      jogador2: { x: 95, y: 18 }
+    };
+
+    personagem1.style.left = posicoesSalvas.jogador1.x + "px";
+    personagem1.style.top = posicoesSalvas.jogador1.y + "px";
+
+    personagem2.style.left = posicoesSalvas.jogador2.x + "px";
+    personagem2.style.top = posicoesSalvas.jogador2.y + "px";
+
+    function salvarPosicao(id, x, y) {
+      const chave = id === "p1" ? "jogador1" : "jogador2";
+      posicoesSalvas[chave] = { x, y };
+      localStorage.setItem("posicoesJogadores", JSON.stringify(posicoesSalvas));
+    }
+
+    function ativarArrasteLivre(personagem) {
+      let offsetX = 0, offsetY = 0, movendo = false;
+
+      personagem.addEventListener("mousedown", (e) => {
+        movendo = true;
+        offsetX = e.clientX - personagem.offsetLeft;
+        offsetY = e.clientY - personagem.offsetTop;
+      });
+
+      personagem.addEventListener("touchstart", (e) => {
+        movendo = true;
+        const touch = e.touches[0];
+        offsetX = touch.clientX - personagem.offsetLeft;
+        offsetY = touch.clientY - personagem.offsetTop;
+      });
+
+      document.addEventListener("mousemove", (e) => {
+        if (!movendo) return;
+        const x = e.clientX - offsetX;
+        const y = e.clientY - offsetY;
+        personagem.style.left = x + "px";
+        personagem.style.top = y + "px";
+      });
+
+      document.addEventListener("touchmove", (e) => {
+        if (!movendo) return;
+        const touch = e.touches[0];
+        const x = touch.clientX - offsetX;
+        const y = touch.clientY - offsetY;
+        personagem.style.left = x + "px";
+        personagem.style.top = y + "px";
+      });
+
+      document.addEventListener("mouseup", () => {
+        if (movendo) {
+          salvarPosicao(personagem.id, personagem.offsetLeft, personagem.offsetTop);
+        }
+        movendo = false;
+      });
+
+      document.addEventListener("touchend", () => {
+        if (movendo) {
+          salvarPosicao(personagem.id, personagem.offsetLeft, personagem.offsetTop);
+        }
+        movendo = false;
+      });
+    }
+
+    ativarArrasteLivre(personagem1);
+    ativarArrasteLivre(personagem2);
+  </script>
+      <!-- Bolhas decorativas -->
+    <div class="bolhas">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span>
+    </div>
 </body>
 </html>
