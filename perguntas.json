@@ -2,17 +2,17 @@
  "perguntas": [
   {
     "pergunta": "O que é poluição marítima?",
-    "alternativas": ["Recifes de coral", "Peixes nadando", "Lixo e sujeira no mar", "Água limpa e salgada"],
+    "alternativas": ["Recifes de coral", "Aumento natural da salinidade da água", "Lixo e sujeira no mar", "Formação de algas por fenômenos naturais"],
     "resposta": "Lixo e sujeira no mar"
   },
   {
     "pergunta": "O que é microplástico?",
-    "alternativas": ["Poeira do solo", "Grãos de areia", "Plástico bem pequeno", "Insetos marinhos"],
+    "alternativas": ["Fragmentos de vidro marinho", "Areia sintética utilizada em filtros", "Plástico bem pequeno", "Resíduos de óleo solidificados"],
     "resposta": "Plástico bem pequeno"
   },
   {
     "pergunta": "Impacto do óleo no mar?",
-    "alternativas": ["Melhora o brilho da água", "Mata animais", "Ajuda na navegação", "Alimenta peixes"],
+    "alternativas": ["Cria barreiras com brilho da água", "Mata animais", "Ajuda na navegação", "Favorece a evaporação rápida da água"],
     "resposta": "Mata animais"
   },
   {
@@ -27,7 +27,7 @@
   },
   {
     "pergunta": "Qual tipo de plástico é mais comum no mar?",
-    "alternativas": ["Brinquedos", "Tubos de PVC", "Sacolas e garrafas", "Cadeiras de praia"],
+    "alternativas": ["Brinquedos", "Tubos de PVC", "Sacolas e garrafas", "Palitos de picolé"],
     "resposta": "Sacolas e garrafas"
   },
   {
@@ -149,6 +149,22 @@
     "pergunta": "Qual alternativa é errada sobre poluição marinha?",
     "alternativas": ["Ela pode afetar a saúde humana", "Ela ajuda na reprodução de algas saudáveis", "Ela reduz a biodiversidade marinha", "Ela pode ser causada por lixo descartado em rios"],
     "resposta": "Ela ajuda na reprodução de algas saudáveis"
-  }
+  },
+  {
+  "pergunta": "Qual é o risco da pesca fantasma?",
+  "alternativas": ["Mata animais marinhos que ficam presos em redes abandonadas", "Causa excesso de peixes nas regiões costeiras", "Aumenta a oxigenação da água", "Favorece a reprodução de moluscos"],
+  "resposta": "Mata animais marinhos que ficam presos em redes abandonadas"
+  },
+  {
+  "pergunta": "O que são zonas mortas nos oceanos?",
+  "alternativas": ["Áreas com baixos níveis de oxigênio, onde poucas formas de vida sobrevivem", "Locais onde a pesca é proibida", "Regiões com água mais fria que o normal", "Áreas de acúmulo de corais mortos"],
+  "resposta": "Áreas com baixos níveis de oxigênio, onde poucas formas de vida sobrevivem"
+  },
+  {
+  "pergunta": "Qual é uma consequência direta da poluição por metais pesados?",
+  "alternativas": ["Envenenamento de organismos marinhos e contaminação da cadeia alimentar", "Aumento da salinidade da água", "Formação de recifes artificiais", "Produção de oxigênio em excesso"],
+  "resposta": "Envenenamento de organismos marinhos e contaminação da cadeia alimentar"
+}
+
 ]
 }
